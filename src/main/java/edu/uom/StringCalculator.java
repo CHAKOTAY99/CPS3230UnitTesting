@@ -4,11 +4,12 @@ public class StringCalculator {
 
     public int addSum(String input){
         // First remove empty spaces in the string
+        input = input.replaceAll("\\n",",");
         input = input.replaceAll("\\s+", "");
         // Check if empty else if it does not contain a comma
         if(input == ""){
             return 0;
-        } else if(!input.contains(",")) {
+        } else if(!input.contains(",") && !input.contains("\n")) {
             int num1 = Integer.parseInt(input);
             return num1;
         }
@@ -21,6 +22,7 @@ public class StringCalculator {
         int loopCounter = input.length();
         char[] chars = input.toCharArray();
         for(int i = 0; i < loopCounter; i++){
+            // Check if it is a ','
             if(chars[i] != ','){
                 // it is a number
                 if(i == loopCounter-1) {
@@ -36,7 +38,7 @@ public class StringCalculator {
                     tempCount = Integer.parseInt(currentString);
                     currentCount = currentCount + tempCount;
                 } else {
-                    if(currentString != ""){
+                    if(!currentString.isEmpty()){
                         tempCount = Integer.parseInt(currentString);
                         currentCount = currentCount + tempCount;
                         currentString = "";

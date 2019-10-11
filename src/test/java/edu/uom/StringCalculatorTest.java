@@ -1,10 +1,11 @@
 package edu.uom;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class StringCalculatorTest {
 
@@ -109,5 +110,4 @@ public class StringCalculatorTest {
         int result = calc.addSum("1\n2\n3,8 , 2");
         assertEquals(16, result);
     }
-
 }

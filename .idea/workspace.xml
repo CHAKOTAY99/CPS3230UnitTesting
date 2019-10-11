@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/StudentDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/StudentDBTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StubDBCConnectionSuccess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uom/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uom/StringCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,6 +41,7 @@
   <component name="ProjectId" id="1RuhVQyd4skPF5WeAgIZXNCowR0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -50,6 +55,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="edu.uom" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -62,12 +72,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringCalculatorTest">
+  <component name="RunManager" selected="JUnit.StudentDBTests">
     <configuration name="StringCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
+          <option name="PATTERN" value="edu.uom.studentdb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,65 +88,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest.addMethodEmptySecondVariable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
+          <option name="PATTERN" value="edu.uom.studentdb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="METHOD_NAME" value="addMethodEmptySecondVariable" />
+      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDBTests.removingOneOfTwoStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.studentdb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
+      <option name="METHOD_NAME" value="removingOneOfTwoStudents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest.addMethodFiveVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDBTests.removingStudentWithUnexistingID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
+          <option name="PATTERN" value="edu.uom.studentdb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="METHOD_NAME" value="addMethodFiveVariables" />
+      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
+      <option name="METHOD_NAME" value="removingStudentWithUnexistingID" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest.addMethodTwoVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDBTests.testAddingTheSameStudentTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
+          <option name="PATTERN" value="edu.uom.studentdb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="METHOD_NAME" value="addMethodTwoVariables" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringCalculatorTest.addMethodWithNewLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="METHOD_NAME" value="addMethodWithNewLine" />
+      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
+      <option name="METHOD_NAME" value="testAddingTheSameStudentTwice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentDBTests" />
+        <item itemvalue="JUnit.StudentDBTests.removingStudentWithUnexistingID" />
+        <item itemvalue="JUnit.StudentDBTests.removingOneOfTwoStudents" />
+        <item itemvalue="JUnit.StudentDBTests.testAddingTheSameStudentTwice" />
         <item itemvalue="JUnit.StringCalculatorTest" />
-        <item itemvalue="JUnit.StringCalculatorTest.addMethodWithNewLine" />
-        <item itemvalue="JUnit.StringCalculatorTest.addMethodFiveVariables" />
-        <item itemvalue="JUnit.StringCalculatorTest.addMethodTwoVariables" />
-        <item itemvalue="JUnit.StringCalculatorTest.addMethodEmptySecondVariable" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +176,7 @@
       <workItem from="1570685760961" duration="843000" />
       <workItem from="1570696159427" duration="10619000" />
       <workItem from="1570719554998" duration="7323000" />
-      <workItem from="1570770566834" duration="1962000" />
+      <workItem from="1570770566834" duration="6762000" />
     </task>
     <servers />
   </component>
@@ -199,6 +208,9 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cps3230unittests$StudentDBTests.ic" NAME="StudentDBTests Coverage Results" MODIFIED="1570776772886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.uom.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$HelloWorldTest.ic" NAME="HelloWorldTest Coverage Results" MODIFIED="1570525414044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.*</FILTER>
     </SUITE>
@@ -206,6 +218,9 @@
       <FILTER>edu.uom.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$StringCalculatorTest_addMethodEmptyFirstVariable.ic" NAME="StringCalculatorTest.addMethodEmptyFirstVariable Coverage Results" MODIFIED="1570713095075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.uom.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cps3230unittests$StringCalculatorTest.ic" NAME="StringCalculatorTest Coverage Results" MODIFIED="1570776141052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.*</FILTER>
     </SUITE>
   </component>

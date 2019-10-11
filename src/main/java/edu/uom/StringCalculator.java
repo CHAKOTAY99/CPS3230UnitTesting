@@ -1,5 +1,9 @@
 package edu.uom;
 
+import java.util.ArrayList;
+
+import static java.lang.Character.isDigit;
+
 public class StringCalculator {
 
     public int addSum(String input){
@@ -9,7 +13,7 @@ public class StringCalculator {
         // Check if empty else if it does not contain a comma
         if(input == ""){
             return 0;
-        } else if(!input.contains(",") && !input.contains("\n")) {
+        } else if(input.matches("[0-9]+")) {
             int num1 = Integer.parseInt(input);
             return num1;
         }
@@ -18,12 +22,13 @@ public class StringCalculator {
 
     public int inputIterator(String input){
         int currentCount = 0, tempCount;
+        String negativeString = "";
         String currentString = "";
         int loopCounter = input.length();
         char[] chars = input.toCharArray();
         for(int i = 0; i < loopCounter; i++){
             // Check if it is a ','
-            if(chars[i] != ','){
+            if(isDigit(chars[i])){
                 // it is a number
                 if(i == loopCounter-1) {
                     currentString = currentString + chars[i];
@@ -33,7 +38,17 @@ public class StringCalculator {
                     currentString = currentString + chars[i];
                 }
             } else {
-                // It is a ','
+                // Check if it is the - symbol
+                if(chars[i] == '-'){
+                    int tempLoop = i;
+                    while(isDigit(chars[tempLoop]) || chars[tempLoop] == '-'){
+                        negativeString = negativeString + chars[tempLoop];
+                        tempLoop ++;
+                    }
+                    negativeString = negativeString + " ";
+                }
+
+                // It is a delimiter
                 if(i == loopCounter-1){
                     tempCount = Integer.parseInt(currentString);
                     currentCount = currentCount + tempCount;
@@ -46,6 +61,13 @@ public class StringCalculator {
                         // do nothing
                     }
                 }
+            }
+        }
+        if(negativeString != ""){
+            try {
+                throw new IllegalAccessException("Negative not allowed: ["+negativeString+"]");
+            } catch (IllegalAccessException e) {
+                // do nothing
             }
         }
         return currentCount;

@@ -79,8 +79,8 @@ public class StudentDBTests {
 
     @Test
     public void testCommitWithSuccessfulDBConnection(){
-        DBConnection dbConnection = new StubDBCConnectionSuccess();
-        studentDB.addStudent(student);
-        
+        //DBConnection dbConnection = new StubDBCConnectionSuccess();
+        //studentDB.addStudent(student);
+
     }
 }

@@ -1,15 +1,16 @@
 package edu.uom;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
+import org.junit.rules.ExpectedException;
 
 import static org.junit.Assert.*;
 
 public class StringCalculatorTest {
 
     StringCalculator calc;
+
+    @Rule
+    public ExpectedException expectedException = ExpectedException.none();
 
     @Before
     public void setup(){
@@ -82,6 +83,12 @@ public class StringCalculatorTest {
     }
 
     @Test
+    public void addMethodThreeDigitValues(){
+        int result = calc.addSum("100 , 10, 12, 15 \n 200");
+        assertEquals(337, result);
+    }
+
+    @Test
     public void addMethodWithNewLine(){
         int result = calc.addSum("2\n3");
         assertEquals(5, result);
@@ -109,5 +116,34 @@ public class StringCalculatorTest {
     public void addMethodFiveWithNewLine(){
         int result = calc.addSum("1\n2\n3,8 , 2");
         assertEquals(16, result);
+    }
+
+    @Test
+    public void testAdditionalDelimiters(){
+        int result = calc.addSum("//;\n1;2;3");
+        assertEquals(6, result);
+    }
+
+    @Test
+    public void testAdditionalDelimitersV2(){
+        int result = calc.addSum("//$\n1$2$3");
+        assertEquals(6, result);
+    }
+
+    @Test
+    public void rejectNegativeNumbers() throws Exception{
+        int result = calc.addSum("-2,3");
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void rejectOneNegativeNmber() throws Exception{
+        try {
+            calc.addSum("1,2,-3,4,5,-6,7,8,-9");
+        }
+        catch (StringCalculator.IllegalArgumentException ne) {
+            //Verify
+            assertEquals("Negatives not allowed: [-3, -6, -9]", ne.getMessage());
+        }
     }
 }

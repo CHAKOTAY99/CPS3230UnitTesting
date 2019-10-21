@@ -23,125 +23,125 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void addMethodEmptyString(){
+    public void addMethodEmptyString() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("");
         assertEquals(0 , result);
     }
 
     @Test
-    public void addMethodEmptyFirstVariable(){
+    public void addMethodEmptyFirstVariable() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum(" ,2");
         assertEquals(2 , result);
     }
 
     @Test
-    public void addMethodSingleDigit(){
+    public void addMethodSingleDigit() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("2");
         assertEquals(2, result);
     }
 
     @Test
-    public void addMethodEmptySecondVariable(){
+    public void addMethodEmptySecondVariable() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("3, ");
         assertEquals(3, result);
     }
 
     @Test
-    public void addMethodTwoVariables(){
+    public void addMethodTwoVariables() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("2,3");
         assertEquals(5, result);
     }
 
     @Test
-    public void addMethodThreeVariables(){
+    public void addMethodThreeVariables() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("2,3,7");
         assertEquals(12, result);
     }
 
     @Test
-    public void addMethodFourVariables(){
+    public void addMethodFourVariables() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("2,3,7,5");
         assertEquals(17, result);
     }
 
     @Test
-    public void addMethodFourAndEmptyVariables(){
+    public void addMethodFourAndEmptyVariables() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("8,1, ,7, ,3");
         assertEquals(19, result);
     }
 
     @Test
-    public void addMethodFiveVariables(){
+    public void addMethodFiveVariables() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("2,3,7,5,3");
         assertEquals(20, result);
     }
 
     @Test
-    public void addMethodTwoDigitValues(){
+    public void addMethodTwoDigitValues() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("10, 12, 15");
         assertEquals(37, result);
     }
 
     @Test
-    public void addMethodThreeDigitValues(){
+    public void addMethodThreeDigitValues() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("100 , 10, 12, 15 \n 200");
         assertEquals(337, result);
     }
 
     @Test
-    public void addMethodWithNewLine(){
+    public void addMethodWithNewLine() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("2\n3");
         assertEquals(5, result);
     }
 
     @Test
-    public void addMethodWithNewLineAndThree(){
+    public void addMethodWithNewLineAndThree() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("1\n2,3");
         assertEquals(6, result);
     }
 
     @Test
-    public void addMethodThreeWithNewLine(){
+    public void addMethodThreeWithNewLine() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("1\n2\n3");
         assertEquals(6, result);
     }
 
     @Test
-    public void addMethodThreeWithNewLineAndWhitespace(){
+    public void addMethodThreeWithNewLineAndWhitespace() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum(" 6\n9 \n3");
         assertEquals(18, result);
     }
 
     @Test
-    public void addMethodFiveWithNewLine(){
+    public void addMethodFiveWithNewLine() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("1\n2\n3,8 , 2");
         assertEquals(16, result);
     }
 
     @Test
-    public void testAdditionalDelimiters(){
+    public void testAdditionalDelimiters() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("//;\n1;2;3");
         assertEquals(6, result);
     }
 
     @Test
-    public void testAdditionalDelimitersV2(){
+    public void testAdditionalDelimitersV2() throws StringCalculator.NegativeNumberException {
         int result = calc.addSum("//$\n1$2$3");
         assertEquals(6, result);
     }
 
     @Test
-    public void rejectNegativeNumbers() throws Exception{
+    public void rejectNegativeNumbers_throwException() throws StringCalculator.NegativeNumberException{
         int result = calc.addSum("-2,3");
-        assertEquals(1, result);
+        assertThrows(StringCalculator.NegativeNumberException, () -> result, "Expect something");
     }
 
     @Test
-    public void rejectOneNegativeNmber() throws Exception{
+    public void rejectOneNegativeNumber_throwException() throws StringCalculator.NegativeNumberException{
         try {
             calc.addSum("1,2,-3,4,5,-6,7,8,-9");
         }
-        catch (StringCalculator.IllegalArgumentException ne) {
+        catch (StringCalculator.NegativeNumberException ne) {
             //Verify
             assertEquals("Negatives not allowed: [-3, -6, -9]", ne.getMessage());
         }

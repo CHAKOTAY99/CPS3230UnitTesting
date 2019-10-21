@@ -5,7 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/StudentDBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/StudentDBTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uom/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uom/StringCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringCalculatorTest.rejectOneNegativeNmber">
+  <component name="RunManager" selected="JUnit.StringCalculatorTest">
     <configuration name="StringCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -148,8 +149,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringCalculatorTest.rejectOneNegativeNmber" />
         <item itemvalue="JUnit.StringCalculatorTest" />
+        <item itemvalue="JUnit.StringCalculatorTest.rejectOneNegativeNmber" />
         <item itemvalue="JUnit.StudentDBTests" />
         <item itemvalue="JUnit.StudentDBTests.removingStudentWithUnexistingID" />
         <item itemvalue="JUnit.StudentDBTests.removingOneOfTwoStudents" />
@@ -172,7 +173,11 @@
       <workItem from="1570696159427" duration="10619000" />
       <workItem from="1570719554998" duration="7323000" />
       <workItem from="1570770566834" duration="7031000" />
-      <workItem from="1570784951779" duration="5757000" />
+      <workItem from="1570784951779" duration="6147000" />
+      <workItem from="1570803360508" duration="1231000" />
+      <workItem from="1571127499706" duration="846000" />
+      <workItem from="1571638147097" duration="2552000" />
+      <workItem from="1571681256978" duration="217000" />
     </task>
     <servers />
   </component>
@@ -191,17 +196,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cps3230unittests$StudentDBTests.ic" NAME="StudentDBTests Coverage Results" MODIFIED="1570776772886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

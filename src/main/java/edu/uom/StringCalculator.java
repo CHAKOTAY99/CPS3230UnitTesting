@@ -6,7 +6,7 @@ import static java.lang.Character.isDigit;
 
 public class StringCalculator {
 
-    public int addSum(String input) throws NegativeNumberException {
+    public int addSum(String input) throws NegativeNumberException{
         // First remove empty spaces in the string
         input = input.replaceAll("\\n",",");
         input = input.replaceAll("\\s+", "");
@@ -20,7 +20,7 @@ public class StringCalculator {
         return inputIterator(input);
     }
 
-    public int inputIterator(String input) throws NegativeNumberException {
+    public int inputIterator(String input) throws NegativeNumberException{
         int currentCount = 0, tempCount;
         String negativeString = "";
         String currentString = "";
@@ -66,7 +66,7 @@ public class StringCalculator {
         if(negativeString != ""){
             try {
                 throw new NegativeNumberException("Negative not allowed: ["+negativeString+"]");
-            } catch (RuntimeException exeption){
+            } catch (NegativeNumberException e) {
                 // do nothing
             }
         }

@@ -68,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringCalculatorTest">
+  <component name="RunManager" selected="JUnit.StringCalculatorTest.rejectOneNegativeNumber_throwException">
     <configuration name="StringCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -80,6 +80,22 @@
       <option name="PACKAGE_NAME" value="edu.uom" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringCalculatorTest.rejectNegativeNumbers_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
+      <option name="METHOD_NAME" value="rejectNegativeNumbers_throwException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,6 +116,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringCalculatorTest.rejectOneNegativeNumber_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
+      <option name="METHOD_NAME" value="rejectOneNegativeNumber_throwException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentDBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -115,45 +147,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDBTests.removingOneOfTwoStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.studentdb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="METHOD_NAME" value="removingOneOfTwoStudents" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDBTests.removingStudentWithUnexistingID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.studentdb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="METHOD_NAME" value="removingStudentWithUnexistingID" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringCalculatorTest.rejectOneNegativeNumber_throwException" />
         <item itemvalue="JUnit.StringCalculatorTest" />
+        <item itemvalue="JUnit.StringCalculatorTest.rejectNegativeNumbers_throwException" />
         <item itemvalue="JUnit.StringCalculatorTest.rejectOneNegativeNmber" />
         <item itemvalue="JUnit.StudentDBTests" />
-        <item itemvalue="JUnit.StudentDBTests.removingStudentWithUnexistingID" />
-        <item itemvalue="JUnit.StudentDBTests.removingOneOfTwoStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +178,7 @@
       <workItem from="1571127499706" duration="846000" />
       <workItem from="1571638147097" duration="2552000" />
       <workItem from="1571681256978" duration="217000" />
+      <workItem from="1571721879054" duration="4202000" />
     </task>
     <servers />
   </component>
@@ -196,6 +197,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cps3230unittests$StudentDBTests.ic" NAME="StudentDBTests Coverage Results" MODIFIED="1570776772886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

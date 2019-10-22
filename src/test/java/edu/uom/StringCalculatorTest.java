@@ -131,9 +131,13 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void rejectNegativeNumbers_throwException() throws StringCalculator.NegativeNumberException{
-        int result = calc.addSum("-2,3");
-        assertThrows(StringCalculator.NegativeNumberException, () -> result, "Expect something");
+    public void rejectNegativeNumbers_throwException(){
+        try {
+            calc.addSum("-2,3");
+        }
+        catch(StringCalculator.NegativeNumberException exception) {
+            assertEquals("Negative not allowed: [-2 ]", exception.getMessage());
+        }
     }
 
     @Test
@@ -141,9 +145,8 @@ public class StringCalculatorTest {
         try {
             calc.addSum("1,2,-3,4,5,-6,7,8,-9");
         }
-        catch (StringCalculator.NegativeNumberException ne) {
-            //Verify
-            assertEquals("Negatives not allowed: [-3, -6, -9]", ne.getMessage());
+        catch (StringCalculator.NegativeNumberException exception) {
+            assertEquals("Negatives not allowed: [-3, -6, -9 ]", exception.getMessage());
         }
     }
 }

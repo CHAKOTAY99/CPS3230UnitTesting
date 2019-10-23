@@ -165,4 +165,22 @@ public class StringCalculatorTest {
         int result = calc.addSum("//;\n1000;2;3");
         assertEquals(5, result);
     }
+
+    @Test
+    public void delimitersAnyLength() throws StringCalculator.NegativeNumberException {
+        int result = calc.addSum("//***\n1***2***3");
+        assertEquals(6, result);
+    }
+
+    @Test
+    public void multipleDelimiters() throws StringCalculator.NegativeNumberException {
+        int result = calc.addSum("//[*][$]\n1*2$3$4");
+        assertEquals(10, result);
+    }
+
+    @Test
+    public void multipleDelimetersMultipleCharacters() throws StringCalculator.NegativeNumberException {
+        int result = calc.addSum("//[*asdf][$$##]\n1***2...3...4,,2");
+        assertEquals(12, result);
+    }
 }

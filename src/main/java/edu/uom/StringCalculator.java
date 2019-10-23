@@ -41,15 +41,12 @@ public class StringCalculator {
                 // Check if it is the - symbol
                 if(chars[i] == '-'){
                     int tempLoop = i;
-                    while(isDigit(chars[tempLoop]) || chars[tempLoop] == '-'){
+                    while((isDigit(chars[tempLoop]) || chars[tempLoop] == '-') && tempLoop < loopCounter -1){
                         negativeString = negativeString + chars[tempLoop];
                         tempLoop ++;
                     }
                     negativeString = negativeString + " ";
-                }
-
-                // It is a delimiter
-                if(i == loopCounter-1){
+                } else if(i == loopCounter-1){
                     tempCount = Integer.parseInt(currentString);
                     currentCount = currentCount + tempCount;
                 } else {

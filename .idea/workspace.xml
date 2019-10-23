@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/cps3230unittests.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/StringCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uom/StringCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uom/StringCalculator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest.rejectMultipleNegativeNumber_throwException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringCalculatorTest.ignoreThousands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +123,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.uom" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="METHOD_NAME" value="rejectMultipleNegativeNumber_throwException" />
+      <option name="METHOD_NAME" value="ignoreThousands" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,10 +164,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StringCalculatorTest" />
+        <item itemvalue="JUnit.StringCalculatorTest.ignoreThousands" />
         <item itemvalue="JUnit.StringCalculatorTest.rejectMultipleNegativeNumbers_throwException" />
         <item itemvalue="JUnit.StringCalculatorTest.addMethodTwoVariables" />
         <item itemvalue="JUnit.StringCalculatorTest.rejectNegativeNumbers_throwException" />
-        <item itemvalue="JUnit.StringCalculatorTest.rejectMultipleNegativeNumber_throwException" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +194,7 @@
       <workItem from="1571681256978" duration="217000" />
       <workItem from="1571721879054" duration="11320000" />
       <workItem from="1571826848542" duration="1208000" />
-      <workItem from="1571839661519" duration="2734000" />
+      <workItem from="1571839661519" duration="3873000" />
     </task>
     <servers />
   </component>

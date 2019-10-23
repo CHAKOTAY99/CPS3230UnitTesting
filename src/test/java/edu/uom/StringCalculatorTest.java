@@ -131,7 +131,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void rejectNegativeNumbers_throwException(){
+    public void rejectNegativeNumbers_throwException() {
         try {
             calc.addSum("-2,3");
         }
@@ -141,7 +141,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void rejectMultipleNegativeNumber_throwException() throws StringCalculator.NegativeNumberException{
+    public void rejectMultipleNegativeNumber_throwException() {
         try {
             calc.addSum("1,2,-3,4,5,-6,7,8,-9");
         }
@@ -151,12 +151,18 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void rejectMultipleNegativeNumbers_throwException() throws StringCalculator.NegativeNumberException{
+    public void rejectMultipleNegativeNumbers_throwException() {
         try {
-            calc.addSum("-1,-2");
+            calc.addSum("-1\n-2");
         }
         catch (StringCalculator.NegativeNumberException exception) {
             assertEquals("Negatives not allowed: [-1 -2 ]", exception.getMessage());
         }
+    }
+
+    @Test
+    public void ignoreThousands() throws StringCalculator.NegativeNumberException {
+        int result = calc.addSum("//;\n1000;2;3");
+        assertEquals(5, result);
     }
 }

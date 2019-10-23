@@ -52,7 +52,9 @@ public class StringCalculator {
                 } else {
                     if(!currentString.isEmpty()){
                         tempCount = Integer.parseInt(currentString);
+                        if(tempCount < 1000){
                         currentCount = currentCount + tempCount;
+                        }
                         currentString = "";
                     } else {
                         // do nothing

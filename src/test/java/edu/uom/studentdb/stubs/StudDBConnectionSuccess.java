@@ -1,4 +1,10 @@
 package edu.uom.studentdb.stubs;
 
-public class StudDBConnectionSuccess {
+import edu.uom.studentdb.DBConnection;
+import edu.uom.studentdb.Student;
+
+public class StudDBConnectionSuccess implements DBConnection {
+    public int commitStudent(Student student) {
+        return 0;
+    }
 }

@@ -1,4 +1,6 @@
 package edu.uom.studentdb;
 
-public class DBConnection {
+public interface DBConnection {
+
+    public int commitStudent(Student student);
 }

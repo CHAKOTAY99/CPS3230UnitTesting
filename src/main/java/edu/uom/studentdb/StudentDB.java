@@ -43,4 +43,21 @@ public class StudentDB {
     public void setDirty(boolean dirty){
         this.isDirty = dirty;
     }
+
+    public boolean commit(DBConnection dbConnection){
+        if(!isDirty){
+            return true;
+        }
+        boolean result = true;
+
+        for (Student s : database){
+            if(dbConnection.commitStudent(s) != 0){
+                result = false;
+            }
+        }
+
+        setDirty(false);
+
+        return result;
+    }
 }

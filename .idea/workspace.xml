@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/spies/StudDBConnectionSuccessSpy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/spies/StudDBConnectionSuccessSpy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +193,7 @@
       <workItem from="1571721879054" duration="11320000" />
       <workItem from="1571826848542" duration="1208000" />
       <workItem from="1571839661519" duration="5095000" />
-      <workItem from="1571896918801" duration="10530000" />
+      <workItem from="1571896918801" duration="12088000" />
     </task>
     <servers />
   </component>

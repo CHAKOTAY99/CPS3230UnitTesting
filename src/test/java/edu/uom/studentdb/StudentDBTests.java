@@ -1,5 +1,6 @@
 package edu.uom.studentdb;
 
+import edu.uom.studentdb.spies.StudDBConnectionSuccessSpy;
 import edu.uom.studentdb.stubs.StubDBConnectionFailure;
 import edu.uom.studentdb.stubs.StubDBConnectionSuccess;
 import org.junit.After;
@@ -107,5 +108,81 @@ public class StudentDBTests {
 
         // Verify
         assertFalse(result);
+    }
+
+    @Test
+    public void testDirtyFlagSetToFalseAfterCreation() {
+        //Verify
+        assertFalse(studentDB.isDirty());
+    }
+
+    @Test
+    public void testDirtyFlagSetToTrueAfterAddingAStudent() {
+        //Exercise
+        studentDB.addStudent(student);
+
+        //Verify
+        assertTrue(studentDB.isDirty);
+    }
+
+    @Test
+    public void testDirtyFlagSetToFalseAfterCommitting() {
+        //Setup
+        studentDB.addStudent(student);
+
+        //Exercise
+        studentDB.commit(new StubDBConnectionSuccess());
+
+        //Verify
+        assertFalse(studentDB.isDirty);
+    }
+
+
+
+    @Test
+    public void testDirtyFlagSetToTrueAfterRemovingAStudent() {
+        //Setup
+        studentDB.addStudent(student);
+        studentDB.commit(new StubDBConnectionSuccess());
+
+        //Exercise
+        studentDB.removeStudent(student.id);
+
+        //Verify
+        assertTrue(studentDB.isDirty);
+    }
+
+
+    @Test
+    public void testDbConnectionIsCalledWhenDBIsDirty() {
+
+        //Setup
+        StudDBConnectionSuccessSpy spyConnection = new StudDBConnectionSuccessSpy();
+        int initialCount = spyConnection.count();
+        studentDB.addStudent(student);  //This makes the DB dirty
+
+        //Exercise
+        studentDB.commit(spyConnection);
+
+        //Verify
+        int newCount = spyConnection.count();
+        assertTrue( newCount > initialCount);
+    }
+
+    @Test
+    public void testDbConnectionIsNotCalledWhenDBIsNotDirty() {
+
+        //Setup
+        StudDBConnectionSuccessSpy spyConnection = new StudDBConnectionSuccessSpy();
+        studentDB.addStudent(student);  //This makes the DB dirty
+        studentDB.commit(spyConnection); //This makes the DB not dirty
+        int initialCount = spyConnection.count();
+
+        //Exercise
+        studentDB.commit(spyConnection);
+
+        //Verify
+        int newCount = spyConnection.count();
+        assertEquals(initialCount, newCount);
     }
 }

@@ -1,10 +1,14 @@
 package edu.uom.studentdb;
 
+import edu.uom.studentdb.stubs.StubDBConnectionFailure;
+import edu.uom.studentdb.stubs.StubDBConnectionSuccess;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 public class StudentDBTests {
 
@@ -79,4 +83,29 @@ public class StudentDBTests {
         assertEquals(size, studentDB.countStudents());
     }
 
+    @Test
+    public void testCommitWithSuccessfulDBConnection(){
+        // Setup
+        DBConnection dbConnection = new StubDBConnectionSuccess();
+        studentDB.addStudent(student);
+
+        // Exercise
+        boolean result = studentDB.commit(dbConnection);
+
+        // Verify
+        assertTrue(result);
+    }
+
+    @Test
+    public void testCommitWithFailedDBConnection(){
+        // Setup
+        DBConnection dbConnection = new StubDBConnectionFailure();
+        studentDB.addStudent(student);
+
+        // Exercise
+        boolean result = studentDB.commit(dbConnection);
+
+        // Verify
+        assertFalse(result);
+    }
 }

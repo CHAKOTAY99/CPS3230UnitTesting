@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/studentdb/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/studentdb/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/studentdb/StudentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/studentdb/StudentDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/StudentDBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/StudentDBTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StubDBConnectionFailure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StubDBConnectionFailure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StudDBConnectionSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StudDBConnectionSuccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StudDBConnectionSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/studentdb/stubs/StubDBConnectionSuccess.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,22 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentDBTests.testRemovingUnExistingStudent">
-    <configuration name="StringCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.StudentDBTests.testCommitWithFailedDBConnection">
     <configuration name="StudentDBTests.testAddingTheSameStudentTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -115,7 +97,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDBTests.testCountIncrementAfterAddingStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentDBTests.testCommitWithFailedDBConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +107,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="METHOD_NAME" value="testCountIncrementAfterAddingStudent" />
+      <option name="METHOD_NAME" value="testCommitWithFailedDBConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDBTests.testCommitWithSuccessfulDBConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.studentdb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
+      <option name="METHOD_NAME" value="testCommitWithSuccessfulDBConnection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentDBTests.testCommitWithFailedDBConnection" />
+        <item itemvalue="JUnit.StudentDBTests.testCommitWithSuccessfulDBConnection" />
         <item itemvalue="JUnit.StudentDBTests.testRemovingUnExistingStudent" />
         <item itemvalue="JUnit.StudentDBTests.testRemovingExistingStudent" />
         <item itemvalue="JUnit.StudentDBTests.testAddingTheSameStudentTwice" />
-        <item itemvalue="JUnit.StudentDBTests.testCountIncrementAfterAddingStudent" />
-        <item itemvalue="JUnit.StringCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +195,7 @@
       <workItem from="1571721879054" duration="11320000" />
       <workItem from="1571826848542" duration="1208000" />
       <workItem from="1571839661519" duration="5095000" />
-      <workItem from="1571896918801" duration="8353000" />
+      <workItem from="1571896918801" duration="9748000" />
     </task>
     <servers />
   </component>

@@ -179,7 +179,7 @@ public class StringCalculatorTest {
     }
 
     @Test
-    public void multipleDelimetersMultipleCharacters() throws StringCalculator.NegativeNumberException {
+    public void multipleDelimitersMultipleCharacters() throws StringCalculator.NegativeNumberException {
         int result = calc.addSum("//[*asdf][$$##]\n1***2...3...4,,2");
         assertEquals(12, result);
     }

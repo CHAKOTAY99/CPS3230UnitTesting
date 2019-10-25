@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/StringCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/uom/StringCalculatorTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringCalculatorTest">
+  <component name="RunManager" selected="JUnit.StringCalculatorTest.multipleDelimetersMultipleCharacters">
     <configuration name="StringCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -96,22 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCalculatorTest.addMethodTwoVariables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
-      <option name="METHOD_NAME" value="addMethodTwoVariables" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StringCalculatorTest.ignoreThousands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -123,6 +105,22 @@
       <option name="PACKAGE_NAME" value="edu.uom" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
       <option name="METHOD_NAME" value="ignoreThousands" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringCalculatorTest.multipleDelimetersMultipleCharacters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.StringCalculatorTest" />
+      <option name="METHOD_NAME" value="multipleDelimetersMultipleCharacters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringCalculatorTest.multipleDelimetersMultipleCharacters" />
         <item itemvalue="JUnit.StringCalculatorTest" />
         <item itemvalue="JUnit.StringCalculatorTest.multipleDelimiters" />
         <item itemvalue="JUnit.StringCalculatorTest.ignoreThousands" />
         <item itemvalue="JUnit.StringCalculatorTest.rejectMultipleNegativeNumbers_throwException" />
-        <item itemvalue="JUnit.StringCalculatorTest.addMethodTwoVariables" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +191,8 @@
       <workItem from="1571681256978" duration="217000" />
       <workItem from="1571721879054" duration="11320000" />
       <workItem from="1571826848542" duration="1208000" />
-      <workItem from="1571839661519" duration="4827000" />
+      <workItem from="1571839661519" duration="5095000" />
+      <workItem from="1571896918801" duration="2589000" />
     </task>
     <servers />
   </component>

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/TimeProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/HelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/HelloWorldTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StudentDBTests">
+  <component name="RunManager" selected="JUnit.HelloWorldTest">
+    <configuration name="HelloWorldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.HelloWorldTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldTest.testTimedMessageMorning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.HelloWorldTest" />
+      <option name="METHOD_NAME" value="testTimedMessageMorning" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentDBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -127,45 +160,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDBTests.testRemovingExistingStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.studentdb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="METHOD_NAME" value="testRemovingExistingStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDBTests.testRemovingUnExistingStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.studentdb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="METHOD_NAME" value="testRemovingUnExistingStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloWorldTest" />
+        <item itemvalue="JUnit.HelloWorldTest.testTimedMessageMorning" />
         <item itemvalue="JUnit.StudentDBTests" />
         <item itemvalue="JUnit.StudentDBTests.testCommitWithFailedDBConnection" />
         <item itemvalue="JUnit.StudentDBTests.testCommitWithSuccessfulDBConnection" />
-        <item itemvalue="JUnit.StudentDBTests.testRemovingUnExistingStudent" />
-        <item itemvalue="JUnit.StudentDBTests.testRemovingExistingStudent" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +194,10 @@
       <workItem from="1571721879054" duration="11320000" />
       <workItem from="1571826848542" duration="1208000" />
       <workItem from="1571839661519" duration="5095000" />
-      <workItem from="1571896918801" duration="12088000" />
+      <workItem from="1571896918801" duration="12386000" />
+      <workItem from="1572027232190" duration="2389000" />
+      <workItem from="1572080166505" duration="628000" />
+      <workItem from="1572186713272" duration="3238000" />
     </task>
     <servers />
   </component>
@@ -233,13 +237,13 @@
     <SUITE FILE_PATH="coverage/cps3230unittests$StudentDBTests.ic" NAME="StudentDBTests Coverage Results" MODIFIED="1572014906143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.studentdb.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/cps3230unittests$HelloWorldTest.ic" NAME="HelloWorldTest Coverage Results" MODIFIED="1570525414044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>edu.uom.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$CalculatorTest.ic" NAME="CalculatorTest Coverage Results" MODIFIED="1570526806314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$StringCalculatorTest_addMethodEmptyFirstVariable.ic" NAME="StringCalculatorTest.addMethodEmptyFirstVariable Coverage Results" MODIFIED="1570713095075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.uom.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cps3230unittests$HelloWorldTest.ic" NAME="HelloWorldTest Coverage Results" MODIFIED="1572207415051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$StringCalculatorTest.ic" NAME="StringCalculatorTest Coverage Results" MODIFIED="1571986053134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

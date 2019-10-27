@@ -12,4 +12,15 @@ public class HelloWorld {
             return "Hello " + name + "!";
         }
     }
+
+    public String getTimedMessage(TimeProvider timeProvider){
+        int segment = timeProvider.getTimeSegment();
+
+        switch(segment) {
+            case TimeProvider.Morning : return "Hello World!! Good Morning!";
+            case TimeProvider.Afternoon : return "Hello World!! Good Afternoon!";
+            case TimeProvider.Evening : return "Hello World!! Good Evening!";
+            default : return "Hello World!!";
+        }
+    }
 }

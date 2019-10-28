@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/weatherForecast/AdditionalClasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/weatherForecast/WeatherForecaster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/weatherForecast/WindException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/weatherForecast/WeatherForecasterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/finance/BankServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/finance/InvalidOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/finance/MoneyTransferrer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/finance/MoneyTransferrerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WeatherForecasterTest">
+  <component name="RunManager" selected="JUnit.MoneyTransferrerTest">
     <configuration name="HelloWorldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -115,6 +115,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MoneyTransferrerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.finance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom.finance" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.finance.MoneyTransferrerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentDBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -126,22 +141,6 @@
       <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDBTests.testCommitWithFailedDBConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.studentdb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="METHOD_NAME" value="testCommitWithFailedDBConnection" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MoneyTransferrerTest" />
         <item itemvalue="JUnit.WeatherForecasterTest" />
         <item itemvalue="JUnit.HelloWorldTest" />
         <item itemvalue="JUnit.HelloWorldTest.testTimedMessageMorning" />
         <item itemvalue="JUnit.StudentDBTests" />
-        <item itemvalue="JUnit.StudentDBTests.testCommitWithFailedDBConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +197,8 @@
       <workItem from="1571896918801" duration="12386000" />
       <workItem from="1572027232190" duration="2389000" />
       <workItem from="1572080166505" duration="628000" />
-      <workItem from="1572186713272" duration="12345000" />
+      <workItem from="1572186713272" duration="12962000" />
+      <workItem from="1572280166287" duration="3732000" />
     </task>
     <servers />
   </component>
@@ -235,6 +235,9 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cps3230unittests$MoneyTransferrerTest.ic" NAME="MoneyTransferrerTest Coverage Results" MODIFIED="1572286707444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.uom.finance.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$StudentDBTests.ic" NAME="StudentDBTests Coverage Results" MODIFIED="1572014906143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.studentdb.*</FILTER>
     </SUITE>

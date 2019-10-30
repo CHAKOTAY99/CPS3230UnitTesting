@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/finance/BankServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/finance/InvalidOperationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/finance/MoneyTransferrer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/finance/MoneyTransferrerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/UomSearchTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/pageobjects/CalculatorPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/pageobjects/UoMSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,38 +84,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MoneyTransferrerTest">
-    <configuration name="HelloWorldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.HelloWorldTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorldTest.testTimedMessageMorning" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.HelloWorldTest" />
-      <option name="METHOD_NAME" value="testTimedMessageMorning" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UomSearchTests.TestSearchForRector">
     <configuration name="MoneyTransferrerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230unittests" />
       <extension name="coverage">
@@ -130,43 +100,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
+    <configuration name="UomSearchTests.TestSearchForRector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230-unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.uom.studentdb.*" />
+          <option name="PATTERN" value="edu.uom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.studentdb" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.studentdb.StudentDBTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
+      <option name="METHOD_NAME" value="TestSearchForRector" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherForecasterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
+    <configuration name="UomSearchTests.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230-unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="edu.uom.weatherForecast.*" />
+          <option name="PATTERN" value="edu.uom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.weatherForecast" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.weatherForecast.WeatherForecasterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
+      <option name="METHOD_NAME" value="testAddition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UomSearchTests.testMultiplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230-unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
+      <option name="METHOD_NAME" value="testMultiplication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UomSearchTests.testSearchForMaltaInGoogle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230-unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
+      <option name="METHOD_NAME" value="testSearchForMaltaInGoogle" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UomSearchTests.TestSearchForRector" />
+        <item itemvalue="JUnit.UomSearchTests.testSearchForMaltaInGoogle" />
+        <item itemvalue="JUnit.UomSearchTests.testMultiplication" />
+        <item itemvalue="JUnit.UomSearchTests.testAddition" />
         <item itemvalue="JUnit.MoneyTransferrerTest" />
-        <item itemvalue="JUnit.WeatherForecasterTest" />
-        <item itemvalue="JUnit.HelloWorldTest" />
-        <item itemvalue="JUnit.HelloWorldTest.testTimedMessageMorning" />
-        <item itemvalue="JUnit.StudentDBTests" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +203,7 @@
       <workItem from="1572080166505" duration="628000" />
       <workItem from="1572186713272" duration="12962000" />
       <workItem from="1572280166287" duration="3732000" />
+      <workItem from="1572431557240" duration="3382000" />
     </task>
     <servers />
   </component>

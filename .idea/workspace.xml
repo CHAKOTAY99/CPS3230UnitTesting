@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/UomSearchTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/pageobjects/CalculatorPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/pageobjects/UoMSearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/UomSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/UomSearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/pageobjects/UoMSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/pageobjects/UoMSearchPage.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,23 +81,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UomSearchTests.TestSearchForRector">
-    <configuration name="MoneyTransferrerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cps3230unittests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.uom.finance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="edu.uom.finance" />
-      <option name="MAIN_CLASS_NAME" value="edu.uom.finance.MoneyTransferrerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UomSearchTests.TestSearchForRector" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UomSearchTests.testSubtraction">
+    <configuration name="UomSearchTests.searchForCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230-unittests" />
       <extension name="coverage">
         <pattern>
@@ -110,13 +92,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.uom" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
-      <option name="METHOD_NAME" value="TestSearchForRector" />
+      <option name="METHOD_NAME" value="searchForCourse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UomSearchTests.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UomSearchTests.testDivideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cps3230-unittests" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="edu.uom" />
       <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
-      <option name="METHOD_NAME" value="testAddition" />
+      <option name="METHOD_NAME" value="testDivideByZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,13 +146,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UomSearchTests.testSubtraction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230-unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.UomSearchTests" />
+      <option name="METHOD_NAME" value="testSubtraction" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UomSearchTests.TestSearchForRector" />
-        <item itemvalue="JUnit.UomSearchTests.testSearchForMaltaInGoogle" />
+        <item itemvalue="JUnit.UomSearchTests.testSubtraction" />
         <item itemvalue="JUnit.UomSearchTests.testMultiplication" />
-        <item itemvalue="JUnit.UomSearchTests.testAddition" />
-        <item itemvalue="JUnit.MoneyTransferrerTest" />
+        <item itemvalue="JUnit.UomSearchTests.testDivideByZero" />
+        <item itemvalue="JUnit.UomSearchTests.testSearchForMaltaInGoogle" />
+        <item itemvalue="JUnit.UomSearchTests.searchForCourse" />
       </list>
     </recent_temporary>
   </component>
@@ -204,6 +202,7 @@
       <workItem from="1572186713272" duration="12962000" />
       <workItem from="1572280166287" duration="3732000" />
       <workItem from="1572431557240" duration="3382000" />
+      <workItem from="1572443092344" duration="3019000" />
     </task>
     <servers />
   </component>

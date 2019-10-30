@@ -1,5 +1,6 @@
 package edu.uom;
 
+import com.google.common.base.Verify;
 import edu.uom.pageobjects.CalculatorPageObject;
 import edu.uom.pageobjects.UoMSearchPage;
 import org.junit.After;
@@ -44,6 +45,16 @@ public class UomSearchTests {
         assertTrue(page.isRectorateComponentPresent());
     }
 
+
+    // Not working due to XPath
+    @Test
+    public void searchForCourse(){
+        UoMSearchPage page = new UoMSearchPage(driver);
+        page.get();
+        page.searchForStudies("Software Development");
+        assertTrue(page.isSoftwareDevelopmentComponentPresent());
+    }
+
     @Test
     public void testSearchForMaltaInGoogle() {
 
@@ -59,7 +70,7 @@ public class UomSearchTests {
         WebElement statsElement = driver.findElement(By.id("resultStats"));
         String statsText = statsElement.getText();
 
-        assertTrue(statsText.indexOf("893,000,000") >= 0);
+        assertTrue(statsText.indexOf("928,000,000") >= 0);
     }
 
 
@@ -76,6 +87,20 @@ public class UomSearchTests {
         //Verify
         assertEquals("7", calc.getDisplayText());
 
+    }
+
+    @Test
+    public void testSubtraction(){
+
+        //Setup
+        CalculatorPageObject calc = new CalculatorPageObject(driver);
+        calc.get();
+
+        // Exercise
+        calc.enterKeys("6-2=");
+
+        // Verify
+        assertEquals("4", calc.getDisplayText());
     }
 
 

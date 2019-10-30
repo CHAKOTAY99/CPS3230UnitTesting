@@ -27,11 +27,19 @@ public class UoMSearchPage {
         sleep(2);
     }
 
-    public void searchForStudies(String name){
-        driver.findElement
+    // Xpath issue - does not work
+    public void searchForStudies(String term){
+        driver.findElement(By.name("text")).sendKeys(term);
+        driver.findElement(By.name("text")).submit();
+        sleep(2);
     }
 
     public boolean isRectorateComponentPresent(){
         return driver.findElements(By.xpath("div[text()='Rectorate']")).size() > 0;
+    }
+
+    // XPath does not work
+    public boolean isSoftwareDevelopmentComponentPresent(){
+        return driver.findElements(By.xpath("div[text()='searchres']")).size() > 0;
     }
 }

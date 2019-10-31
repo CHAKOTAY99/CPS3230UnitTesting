@@ -129,4 +129,12 @@ public class UomSearchTests {
         //Verify
         assertEquals("Infinity", calc.getDisplayText());
     }
+
+    @Test
+    public  void testSimpleSearch(){
+        driver.get("http://www.google.com");
+        driver.findElement(By.name("q")).sendKeys("Malta");
+        driver.findElement(By.name("btnK")).click();
+        assertEquals("Malta - Google Search", driver.getTitle());
+    }
 }

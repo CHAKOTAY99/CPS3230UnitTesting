@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/CucumberRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/cucumber/stepdefs/CalculatorStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/cucumber/stepdefs/GoogleStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/system/google/GoogleTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/calculator.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/google.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/cps3230-unittests.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/cps3230-unittests.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/lightbulb/BulbOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/lightbulb/BulbOperatorModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/lightbulb/enums/BulbOperatorStates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/UomSearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/UomSearchTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,6 +228,7 @@
       <workItem from="1572477264841" duration="366000" />
       <workItem from="1572478340547" duration="81000" />
       <workItem from="1572478469552" duration="2300000" />
+      <workItem from="1572535286484" duration="4748000" />
     </task>
     <servers />
   </component>

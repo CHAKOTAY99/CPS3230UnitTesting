@@ -1,5 +1,7 @@
 package edu.uom.lightbulb;
 
+import java.util.Scanner;
+
 public class BulbOperator {
 		private boolean lowBrightness = false, mediumBrightness = false, highBrightness = false;
 
@@ -77,7 +79,9 @@ public class BulbOperator {
 		return lowBrightness || mediumBrightness || highBrightness;
 	}
 
-    /*public static void main(String[] args) {
+	// We don't want this to be counted in our coverage
+/*
+    public static void main(String[] args) {
 	final Scanner sc = new Scanner(System.in);
         final BulbOperator bulbOperator = new BulbOperator();
 
@@ -127,5 +131,6 @@ public class BulbOperator {
                     System.out.println("Incorrect option chosen.");
             }
         } while(choice != 5);
-    }*/
+    }
+    */
 }

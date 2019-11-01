@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2bc250e-c231-4605-a683-94901499e628" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uom/telephone/TelephoneSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/telephone/TelephoneSystemModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/edu/uom/telephone/enums/TelephoneSystemStates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/uom/lightbulb/BulbOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uom/lightbulb/BulbOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uom/lightbulb/BulbOperatorModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uom/lightbulb/BulbOperatorModelTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +83,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: calculator">
+  <component name="RunManager" selected="JUnit.BulbOperatorModelTest">
+    <configuration name="BulbOperator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.uom.lightbulb.BulbOperator" />
+      <module name="cps3230unittests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.uom.lightbulb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: calculator" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/calculator.feature" />
@@ -100,58 +115,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: google" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/google.feature" />
-      <option name="GLUE" value="edu.uom.cucumber.stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="cps3230-unittests" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: google" />
+    <configuration name="BulbOperatorModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="edu.uom.lightbulb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="edu.uom.lightbulb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.lightbulb.BulbOperatorModelTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Basic addition" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/calculator.feature" />
-      <option name="GLUE" value="edu.uom.cucumber.stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="cps3230-unittests" />
-      <option name="NAME_FILTER" value="^Basic addition$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Basic addition$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Basic addition" />
+    <configuration name="BulbOperatorModelTest.BulbOperatorModelRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cps3230unittests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="PATTERN" value="edu.uom.lightbulb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Simple Search" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="4" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/google.feature" />
-      <option name="GLUE" value="edu.uom.cucumber.stepdefs" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="cps3230-unittests" />
-      <option name="NAME_FILTER" value="^Simple Search$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Simple Search$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Simple Search" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="edu.uom.lightbulb" />
+      <option name="MAIN_CLASS_NAME" value="edu.uom.lightbulb.BulbOperatorModelTest" />
+      <option name="METHOD_NAME" value="BulbOperatorModelRunner" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,19 +162,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber java.Scenario: Basic addition" />
-      <item itemvalue="Cucumber java.Scenario: Simple Search" />
       <item itemvalue="Cucumber java.Feature: calculator" />
-      <item itemvalue="Cucumber java.Feature: google" />
       <item itemvalue="JUnit.CucumberRunner" />
+      <item itemvalue="JUnit.BulbOperatorModelTest.BulbOperatorModelRunner" />
+      <item itemvalue="Application.BulbOperator" />
+      <item itemvalue="JUnit.BulbOperatorModelTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BulbOperatorModelTest" />
+        <item itemvalue="Application.BulbOperator" />
+        <item itemvalue="JUnit.BulbOperatorModelTest.BulbOperatorModelRunner" />
         <item itemvalue="Cucumber java.Feature: calculator" />
         <item itemvalue="JUnit.CucumberRunner" />
-        <item itemvalue="Cucumber java.Feature: google" />
-        <item itemvalue="Cucumber java.Scenario: Simple Search" />
-        <item itemvalue="Cucumber java.Scenario: Basic addition" />
       </list>
     </recent_temporary>
   </component>
@@ -271,6 +261,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$WeatherForecasterTest.ic" NAME="WeatherForecasterTest Coverage Results" MODIFIED="1572213320431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.weatherForecast.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/cps3230unittests$BulbOperatorModelTest.ic" NAME="BulbOperatorModelTest Coverage Results" MODIFIED="1572592907396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>edu.uom.lightbulb.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/cps3230unittests$CalculatorTest.ic" NAME="CalculatorTest Coverage Results" MODIFIED="1570526806314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>edu.uom.*</FILTER>
